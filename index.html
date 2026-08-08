@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$SPIDEY — Unofficial Fan Meme Coin</title>
+  <style>
+    :root {
+      --red: #E23636;
+      --blue: #2B5EA7;
+      --dark: #0D0D0D;
+      --gray: #A0A0A0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--dark);
+      color: white;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at 50% 30%, #1a1a2e 0%, var(--dark) 70%);
+      padding: 40px 20px;
+    }
+    .logo-placeholder {
+      width: 130px; height: 130px;
+      background: linear-gradient(135deg, var(--red), var(--blue));
+      border-radius: 50%;
+      margin: 0 auto 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+      box-shadow: 0 0 40px rgba(226,54,54,0.4);
+    }
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      font-weight: 900;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .tagline { font-size: 1.3rem; color: var(--blue); font-weight: 600; margin-bottom: 10px; }
+    .slogan { font-size: 1.05rem; color: var(--gray); font-style: italic; margin-bottom: 15px; }
+    .disclaimer-badge {
+      background: #222;
+      border: 1px solid #444;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-bottom: 35px;
+    }
+    .cta-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-primary { background: var(--red); color: white; }
+    .btn-primary:hover { background: #c92e2e; }
+    .btn-secondary { background: transparent; color: white; border: 2px solid var(--blue); }
+    .btn-secondary:hover { background: var(--blue); }
+    section { padding: 70px 0; }
+    .section-title { font-size: 2rem; color: var(--red); text-align: center; margin-bottom: 12px; }
+    .section-sub { text-align: center; color: var(--gray); max-width: 600px; margin: 0 auto 40px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 28px 18px;
+      text-align: center;
+    }
+    .card h3 { color: var(--red); font-size: 1.6rem; margin-bottom: 6px; }
+    .card p { color: var(--gray); font-size: 0.95rem; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      counter-reset: step;
+    }
+    .step {
+      background: #161616;
+      border-radius: 16px;
+      padding: 25px;
+      position: relative;
+    }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: -12px; left: 18px;
+      background: var(--red);
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .step h4 { margin: 12px 0 6px; }
+    .step p { color: var(--gray); font-size: 0.9rem; }
+    .community-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .community-links a {
+      background: #161616;
+      border: 1px solid #333;
+      padding: 16px 32px;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .community-links a:hover { border-color: var(--blue); background: var(--blue); }
+    footer {
+      background: #080808;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 1px solid #222;
+    }
+    .disclaimer {
+      max-width: 750px;
+      margin: 20px auto 0;
+      font-size: 0.78rem;
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="logo-placeholder">🕷️</div>
+    <h1>$SPIDEY</h1>
+    <p class="tagline">Unofficial Fan Meme Coin</p>
+    <p class="slogan">“With great power comes great gains.”</p>
+    <div class="disclaimer-badge">Not affiliated with Marvel or Disney</div>
+    <div class="cta-group">
+      <a href="#buy" class="btn btn-primary">Buy $SPIDEY</a>
+      <a href="#community" class="btn btn-secondary">Join the Web</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Origin Story</h2>
+      <p class="section-sub">An unofficial fan-made meme for the community. Pure vibes only.</p>
+      <p style="text-align:center;color:#ccc;max-width:700px;margin:0 auto;">
+        $SPIDEY is a community-driven fan meme coin inspired by the spirit of the friendly neighborhood hero. 
+        It is not affiliated with Marvel, Disney, or any official Spider-Man property. 
+        We exist for the memes, the culture, and diamond hands.
+      </p>
+    </div>
+  </section>
+
+  <section style="background:#111;">
+    <div class="container">
+      <h2 class="section-title">Tokenomics</h2>
+      <p class="section-sub">Fair launch style on Pump.fun</p>
+      <div class="cards">
+        <div class="card"><h3>Fair</h3><p>Bonding Curve</p></div>
+        <div class="card"><h3>0/0</h3><p>No Extra Taxes</p></div>
+        <div class="card"><h3>Community</h3><p>First Priority</p></div>
+        <div class="card"><h3>Fan-Made</h3><p>Unofficial Only</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy">
+    <div class="container">
+      <h2 class="section-title">How to Buy</h2>
+      <p class="section-sub">Simple steps after launch on Pump.fun</p>
+      <div class="steps">
+        <div class="step"><h4>Get a Wallet</h4><p>Phantom or Solflare</p></div>
+        <div class="step"><h4>Get SOL</h4><p>Buy and send to your wallet</p></div>
+        <div class="step"><h4>Go to Pump.fun</h4><p>Search $SPIDEY or paste the link</p></div>
+        <div class="step"><h4>Buy & Hold</h4><p>Welcome to the neighborhood</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" style="background:#111;">
+    <div class="container">
+      <h2 class="section-title">Join the Web</h2>
+      <p class="section-sub">Community only. Fan-made energy.</p>
+      <div class="community-links">
+        <a href="#">Twitter / X</a>
+        <a href="#">Telegram</a>
+        <a href="#">Chart</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p style="font-size:1.3rem;color:var(--red);font-weight:bold;">$SPIDEY</p>
+      <p>Unofficial Fan Meme Coin</p>
+      <div class="disclaimer">
+        <strong>FULL DISCLAIMER:</strong> $SPIDEY is a fictional, unofficial fan-made meme coin concept created purely for entertainment. 
+        Spider-Man and all related characters, names, and likenesses are trademarks of Marvel Entertainment / The Walt Disney Company. 
+        This project is not affiliated with, endorsed by, sponsored by, or connected to Marvel, Disney, or any of their partners. 
+        Do not use official Marvel artwork. Cryptocurrency is extremely high risk. Most meme coins lose all or nearly all value. 
+        This is not financial advice. Never invest money you cannot afford to lose. Swing carefully.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
